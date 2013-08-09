@@ -42,7 +42,6 @@ public class GameMain extends Sprite {
         setState(new LoadingState());
         Thread thread = new Thread(Resources.getInstance());
         thread.start();
-        //Resources.getInstance().loadAll();
         Engine.gameInput = new GameInput(true, true, false);
         Mouse.setGrabbed(true);
         
